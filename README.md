@@ -1,1 +1,3 @@
-# curso-php
+# Curso-PHP
+
+## Pildoras informáticas
