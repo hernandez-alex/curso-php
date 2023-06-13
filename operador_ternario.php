@@ -9,5 +9,5 @@
   }
 
   // Operador ternario
-  echo ($edad <18 )? "Eres menor de edad. <br/>" : "Eres mayor de edad. <br/>";
+  echo ($edad < 18 ) ? "Eres menor de edad. <br/>" : "Eres mayor de edad. <br/>";
 ?>
