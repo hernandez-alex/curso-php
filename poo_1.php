@@ -6,42 +6,18 @@
   <title>POO I</title>
 </head>
 <body>
-  <?php
-    // Creando una clase
-    class Coche{
-      // Creando propiedades (caracteristicas) a una clase
-      var $ruedas;
-      var $color;
-      var $motor;
+<?php
+  include("vehiculos.php");
 
-      // Constructor __construct(): indica el estado inicial de los objetos que pertenecen
-      // a la clase
-      function __construct(){
-        // Antiguamente era una función con el mismo nombre de la clase
-        $this->ruedas= 4;
-        $this->color= "";
-        $this->motor= 1600;
-      }
+  $mazda = new Coche();
+  echo "El Mazda tiene " . $mazda->ruedas . " ruedas. <br/>";
+  $mazda->frenar();
+  $mazda->establece_color("Verde");
 
-      // Creando métodos (funcionalidades)
-      function arrancar(){
-        echo "Estoy arrancando <br/>";
-      }
-      function girar(){
-        echo "Estoy girando <br/>";
-      }
-      function frenar(){
-        echo "Estoy frenando <br/>";
-      }
-    }
-
-    // Creando una instancia de la clase Coche
-    $renault = new Coche();
-    $mazda = new Coche();
-    $seat = new Coche();
-
-    $mazda->girar();
-    echo $mazda->ruedas;
-  ?>
+  $pegaso = new Camion();
+  echo "El Pegaso tiene " . $pegaso->ruedas . " ruedas. <br/>";
+  $pegaso->frenar();
+  
+?>
 </body>
 </html>
