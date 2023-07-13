@@ -10,17 +10,18 @@
   include("vehiculos.php");
 
   $mazda = new Coche();
-  echo "El Mazda tiene " . $mazda->ruedas . " ruedas. <br/>";
+  // El código debajo da error porque se ha encapsulado la variable $ruedas
+  // echo "El Mazda tiene " . $mazda->ruedas . " ruedas. <br/>";
   $mazda->frenar();
   $mazda->establece_color("Verde");
 
   $pegaso = new Camion();
-  echo "El Pegaso tiene " . $pegaso->ruedas . " ruedas. <br/>";
+  // El código debajo da error porque se ha encapsulado la variable $ruedas
+  // echo "El Pegaso tiene " . $pegaso->ruedas . " ruedas. <br/>";
   $pegaso->frenar();
   $pegaso->establece_color("Violeta");
   $pegaso->arrancar();
 
-  
 ?>
 </body>
 </html>

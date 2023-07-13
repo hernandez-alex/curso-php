@@ -2,7 +2,8 @@
     // Creando una clase
     class Coche{
       // Creando propiedades (caracteristicas) a una clase
-      var $ruedas;
+      // Encapasulando una variable (convertirla en privada solo para la clase)
+      private $ruedas;
       var $color;
       var $motor;
 
