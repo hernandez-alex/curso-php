@@ -17,6 +17,9 @@
   $pegaso = new Camion();
   echo "El Pegaso tiene " . $pegaso->ruedas . " ruedas. <br/>";
   $pegaso->frenar();
+  $pegaso->establece_color("Violeta");
+  $pegaso->arrancar();
+
   
 ?>
 </body>

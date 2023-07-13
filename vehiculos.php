@@ -47,11 +47,7 @@
 // ----------------------------------------------------------------------
 
     // Creando una clase
-    class Camion{
-      // Creando propiedades (caracteristicas) a una clase
-      var $ruedas;
-      var $color;
-      var $motor;
+    class Camion extends Coche{
 
       // Constructor __construct(): indica el estado inicial de los objetos que pertenecen
       // a la clase
@@ -62,15 +58,14 @@
         $this->motor= 2600;
       }
 
-      // Creando métodos (funcionalidades)
+      function establece_color($color_camion){
+        $this->color=$color_camion;
+        echo "El color de este camion es " . $this->color . "<br/>";
+      }
+
       function arrancar(){
-        echo "Estoy arrancando <br/>";
-      }
-      function girar(){
-        echo "Estoy girando <br/>";
-      }
-      function frenar(){
-        echo "Estoy frenando <br/>";
+        parent::arrancar();
+        echo "Camión arrancado.";
       }
     }
 
