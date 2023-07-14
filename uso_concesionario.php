@@ -9,7 +9,10 @@
   <?php
     include("concesionario.php");
 
-    Compra_vehiculo::$ayuda = 10000;
+    // Al declarar la variable estatica $ayuda como privada ya no se puede manipular
+    // Compra_vehiculo::$ayuda = 10000;
+
+    Compra_vehiculo::descuento_gobierno();
 
     $compra_Antonio = new Compra_vehiculo("compacto");
     $compra_Antonio->climatizador();

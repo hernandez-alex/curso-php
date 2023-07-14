@@ -1,7 +1,7 @@
 <?php
   class Compra_vehiculo {
     private $precio_base;
-    static $ayuda = 4500;
+    private static $ayuda = 0;
 
     function __construct($gama){
       if ($gama == "urbano") {
@@ -10,6 +10,12 @@
         $this->precio_base = 20000;
       } else if ($gama == "berlina") {
         $this->precio_base = 30000;
+      }
+    }
+
+    static function descuento_gobierno(){
+      if (date("m-d-y") < "05-01-23"){
+        self::$ayuda = 4500;
       }
     }
 
