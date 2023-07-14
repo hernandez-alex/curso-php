@@ -13,14 +13,21 @@
   // El código debajo da error porque se ha encapsulado la variable $ruedas
   // echo "El Mazda tiene " . $mazda->ruedas . " ruedas. <br/>";
   $mazda->frenar();
-  $mazda->establece_color("Verde");
+  $mazda->set_color("Verde");
 
+  
   $pegaso = new Camion();
   // El código debajo da error porque se ha encapsulado la variable $ruedas
   // echo "El Pegaso tiene " . $pegaso->ruedas . " ruedas. <br/>";
   $pegaso->frenar();
-  $pegaso->establece_color("Violeta");
+  $pegaso->set_color("Violeta");
   $pegaso->arrancar();
+  echo "<br/>";
+  
+  // Getters y Setters
+  echo "El mazda tiene " . $mazda->get_ruedas() . " ruedas<br/>";
+  echo "El pegazo tiene " . $pegaso->get_ruedas() . " ruedas<br/>";
+
 
 ?>
 </body>
