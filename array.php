@@ -7,11 +7,20 @@
 </head>
 <body>
   <?php
+    /* Definiendo un array indexado
     $semana[] = "Lunes";
     $semana[] = "Martes";
     $semana[] = "Miercoles";
+    */
 
-    echo $semana[2];
+    /* Definiendo un array indexado */
+
+    $semana = array("Lunes", "Martes", "Miercoles");
+
+    echo $semana[2] . "<br/>";
+
+    $datos = array("nombre"=>"Alex", "apellido"=>"Hernández", "cedula"=>"12326995");
+    echo "Me llamo " . $datos["nombre"] . " " . $datos["apellido"];
   ?>
 </body>
 </html>
