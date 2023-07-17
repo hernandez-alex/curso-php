@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexión BBDD php</title>
+</head>
+<body>
+  <?php
+    $db_host = "localhost";
+    $db_nombre = "pruebas";
+    $db_usuario = "root";
+    $db_clave = "";
+
+    $db_conexion = mysqli_connect($db_host, $db_usuario, $db_clave, $db_nombre);
+
+    $query = "SELECT * FROM datos_personales";
+
+    $resultados = mysqli_query($db_conexion, $query);
+
+    $fila = mysqli_fetch_row($resultados);
+
+    echo $fila[0] . " " . $fila[1] . " " . $fila[2] . " " . $fila[3];
+  ?>
+</body>
+</html>
