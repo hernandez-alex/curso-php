@@ -14,13 +14,21 @@
 
     $db_conexion = mysqli_connect($db_host, $db_usuario, $db_clave, $db_nombre);
 
+    if (mysqli_connect_errno()){
+      echo "Fallo al conectar a la BBDD";
+      exit();
+    }
+
     $query = "SELECT * FROM datos_personales";
 
     $resultados = mysqli_query($db_conexion, $query);
 
-    $fila = mysqli_fetch_row($resultados);
+    while($fila = mysqli_fetch_row($resultados)){
+      echo $fila[0] . " " . $fila[1] . " " . $fila[2] . " " . $fila[3] . "</br>";
+      $registros++;
+    }
 
-    echo $fila[0] . " " . $fila[1] . " " . $fila[2] . " " . $fila[3];
+    mysqli_close($db_conexion)
   ?>
 </body>
 </html>
