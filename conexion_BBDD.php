@@ -30,8 +30,6 @@
 
     echo "</br> Hola esto está funciona, nuevamente desde linux mint... jajaja Yupiiiii";
 
-    echo "hola alex"
-
     mysqli_close($db_conexion)
   ?>
 </body>
