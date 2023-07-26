@@ -28,7 +28,7 @@
       $registros++;
     }
 
-    echo "</br> Hola esto está funciona, nuevamente desde linux mint... jajaja Yupiiiii";
+    echo "</br> Ahora si puedo decir que está funcionando ya el relojito desaparecio";
 
     mysqli_close($db_conexion)
   ?>
