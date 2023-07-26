@@ -28,7 +28,7 @@
       $registros++;
     }
 
-    echo "</br> Hola esto está funcionando... jajaja Yupiiiii";
+    // echo "</br> Hola esto está funcionando... jajaja Yupiiiii";
 
     mysqli_close($db_conexion)
   ?>
